@@ -4,14 +4,14 @@ import cool.scx.bean.BeanFactory;
 import cool.scx.bean.BeanResolutionContext;
 import cool.scx.bean.BeanResolutionContext.DependencyContext;
 import cool.scx.bean.exception.BeanCreationException;
-import cool.scx.reflect.ClassInfo;
-import cool.scx.reflect.FieldInfo;
-import cool.scx.reflect.ScxReflect;
+import dev.scx.reflect.ClassInfo;
+import dev.scx.reflect.FieldInfo;
+import dev.scx.reflect.ScxReflect;
 
 import static cool.scx.bean.BeanResolutionContext.extractCircularDependencyChain;
 import static cool.scx.bean.BeanResolutionContext.isUnsolvableCycle;
 import static cool.scx.bean.provider.InjectingBeanProvider.BeanStatus.*;
-import static cool.scx.reflect.AccessModifier.PUBLIC;
+import static dev.scx.reflect.AccessModifier.PUBLIC;
 
 /// 支持字段注入 的 提供器 (只处理非 final 的 public 字段)
 ///

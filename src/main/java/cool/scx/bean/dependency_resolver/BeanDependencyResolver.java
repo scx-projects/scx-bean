@@ -1,8 +1,8 @@
 package cool.scx.bean.dependency_resolver;
 
 import cool.scx.bean.BeanResolutionContext;
-import cool.scx.reflect.FieldInfo;
-import cool.scx.reflect.ParameterInfo;
+import dev.scx.reflect.FieldInfo;
+import dev.scx.reflect.ParameterInfo;
 
 /// 提供配置一个 bean 所需的依赖
 ///

@@ -1,9 +1,9 @@
 package cool.scx.bean;
 
 import cool.scx.bean.exception.BeanCreationException;
-import cool.scx.reflect.ConstructorInfo;
-import cool.scx.reflect.FieldInfo;
-import cool.scx.reflect.ParameterInfo;
+import dev.scx.reflect.ConstructorInfo;
+import dev.scx.reflect.FieldInfo;
+import dev.scx.reflect.ParameterInfo;
 
 import java.util.ArrayList;
 import java.util.List;
