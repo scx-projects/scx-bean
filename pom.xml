@@ -4,12 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>cool.scx</groupId>
+        <groupId>dev.scx</groupId>
         <artifactId>scx-parent</artifactId>
-        <version>28</version>
+        <version>1</version>
         <relativePath/>
     </parent>
 
+    <groupId>cool.scx</groupId>
     <artifactId>scx-bean</artifactId>
     <version>4.1.0</version>
     <packaging>jar</packaging>
@@ -56,7 +57,7 @@
                         </manifest>
                     </archive>
                     <!-- 此处因为没有类似 maven-source-plugin 插件中 excludeResources 的选项 -->
-                    <!-- 所以在这里手动排除资源文件 , 具体文件说明见下方 -->
+                    <!-- 所以在这里手动排除资源文件, 具体文件说明见下方 -->
                     <excludes>
                         <!-- 默认 git 占位空文件 -->
                         <exclude>/.gitkeep</exclude>
@@ -94,10 +95,24 @@
     <properties>
 
         <!-- *********************** 以下为依赖包版本 *********************** -->
-        <scx-object.version>2.0.0</scx-object.version>
-        <scx-common.version>4.3.0</scx-common.version>
+        <scx-object.version>4.5.0-SNAPSHOT</scx-object.version>
+        <scx-common.version>4.5.0-SNAPSHOT</scx-common.version>
         <testng.version>7.11.0</testng.version>
 
     </properties>
+
+    <repositories>
+        <repository>
+            <name>Central Portal Snapshots</name>
+            <id>central-portal-snapshots</id>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>

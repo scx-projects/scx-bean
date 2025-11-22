@@ -7,8 +7,8 @@ import cool.scx.bean.exception.BeanCreationException;
 import cool.scx.bean.exception.NoSuchBeanException;
 import cool.scx.bean.exception.NoUniqueBeanException;
 import cool.scx.common.constant.AnnotationValues;
-import cool.scx.reflect.FieldInfo;
-import cool.scx.reflect.ParameterInfo;
+import dev.scx.reflect.FieldInfo;
+import dev.scx.reflect.ParameterInfo;
 
 /// 处理 Autowired 注解 同时也承担最核心的 配置
 ///

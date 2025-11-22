@@ -5,10 +5,10 @@ import cool.scx.bean.annotation.Value;
 import cool.scx.bean.exception.MissingValueException;
 import cool.scx.object.ScxObject;
 import cool.scx.object.mapping.NodeMappingException;
-import cool.scx.reflect.AnnotatedElementInfo;
-import cool.scx.reflect.FieldInfo;
-import cool.scx.reflect.ParameterInfo;
-import cool.scx.reflect.TypeInfo;
+import dev.scx.reflect.AnnotatedElementInfo;
+import dev.scx.reflect.FieldInfo;
+import dev.scx.reflect.ParameterInfo;
+import dev.scx.reflect.TypeInfo;
 
 import java.util.Map;
 
